@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    /* padding: 30px; */
+    background-color: #f4f4f4;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+#solicitud-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+#solicitud-datos button {
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+#solicitud-datos input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#solicitud-datos fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+}
+#color-nombre {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+
+}
+/* Estilos para la tabla de datos */
+
+.tabla-datos {
+    border-collapse: separate;
+    border-spacing: 8px 8px;
+}
+
+.tabla-datos th {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.tabla-datos td:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.color-preview {
+    width: 45px;
+    height: 35px;
+    color: #b2afaf;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 3px 4px #999;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.casilla {
+    width: 45px;
+    height: 35px;
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    border-radius: 9px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#color-info {
+    margin-bottom: 20px;
+}
+
+/* Estilos para color-info */
+#color-info {
+    font-size: 18px;
+}
+.info-line {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+#color-name {
+    margin-right: 20px;
+}
+
+#color-code {
+    font-weight: bold;
+}
+
+#color-base {
+    margin-right: 20px;
+}
+
+#color-presentation {
+    color: #555;
+}
