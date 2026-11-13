@@ -32,7 +32,7 @@ let formulas = {};
 // Peticion fetch() para cargar formulas.json
 async function loadFormulas() {
     try {
-        const response = await fetch("/src/data/formulas.json");
+        const response = await fetch("./src/data/formulas.json");
         if (!response.ok) {
             throw new Error("No se pudo cargar formulas.json");
         }
