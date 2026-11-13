@@ -2,3 +2,4 @@ node_modules/
 scripts/
 .env
 src/data/formulas.xlsx
+src/data/formulas1008.json
