@@ -3,3 +3,5 @@ scripts/
 .env
 src/data/formulas.xlsx
 src/data/formulas1008.json
+package-lock.json
+package.json
