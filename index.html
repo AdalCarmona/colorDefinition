@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Proyecto de Definición de Colores</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./src/css/styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Sistema de Colores</h1>
-        </header>
-        <main>
-            <form id="solicitud-datos">
-                <label id="color-nombre" for="color-entrada">Seleccion de Color:</label>
-                <input 
-                    type="text" 
-                    id="color-entrada" 
-                    placeholder="Numero o nombre del color" required>
 
-                <fieldset>
-                    <legend>Selecciona presentacion:</legend>
-                    <label><input type="radio" name="presentacion" value="cubeta">Cubeta</label>
-                    <label><input type="radio" name="presentacion" value="galon">Galon</label>
-                    <label><input type="radio" name="presentacion" value="litro">Litro</label>
-                </fieldset>
+<head>
+    <title>Proyecto de Definición de Colores</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
 
-                <button type="submit" id="buscar">Buscar</button>
-            </form>
+<body>
+    <header>
+        <h1>Sistema de Colores</h1>
+    </header>
+    <main>
+        <form id="solicitud-datos">
+            <label id="color-nombre" for="color-entrada">Seleccion de Color:</label>
+            <input type="text" id="color-entrada" placeholder="Numero o nombre del color" required>
 
-            <section id="resultado">
-                <h2>Combinación de Tintas:</h2>
+            <fieldset>
+                <legend>Selecciona presentacion:</legend>
+                <label><input type="radio" name="presentacion" value="cubeta">Cubeta</label>
+                <label><input type="radio" name="presentacion" value="galon">Galon</label>
+                <label><input type="radio" name="presentacion" value="litro">Litro</label>
+            </fieldset>
 
-                <div id="color-info">
-                    <div class="info-line">
-                        <span class="info-label">Color:</span>
-                        <span id="color-name"></span>
+            <button type="submit" id="buscar">Buscar</button>
+        </form>
 
-                        <span class="info-label">Código:</span>
-                        <span id="color-code"></span>
-                    </div>
+        <section id="resultado">
+            <h2>Combinación de Tintas:</h2>
 
-                    <div class="info-line">
-                        <span class="info-label">Base:</span>
-                        <span id="color-base"></span>
+            <div id="color-info">
+                <div class="info-line">
+                    <span class="info-label">Color:</span>
+                    <span id="color-name"></span>
 
-                        <span class="info-label">Presentación:</span>
-                        <span id="color-presentation"></span>
-                    </div>
+                    <span class="info-label">Código:</span>
+                    <span id="color-code"></span>
                 </div>
 
-                <table class="tabla-datos">
-                    <thead>
-                        <tr>
-                            <th>Tinta</th>
-                            <th>oz</th>
-                            <th>64</th>
-                            <th>128</th>
-                        </tr>
-                    </thead>
+                <div class="info-line">
+                    <span class="info-label">Base:</span>
+                    <span id="color-base"></span>
 
-                    <tbody id="tabla-tintas"></tbody>
-                </table>
-                <div id="color-info-error"></div>
-            </section>
-        </main>
-        <script src="./src/js/app.js"></script>
+                    <span class="info-label">Presentación:</span>
+                    <span id="color-presentation"></span>
+                </div>
+            </div>
+
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Tinta</th>
+                        <th>oz</th>
+                        <th>64</th>
+                        <th>128</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabla-tintas"></tbody>
+            </table>
+            <div id="color-info-error"></div>
+        </section>
+    </main>
+    <script src="./src/js/app.js"></script>
 
 </html>
