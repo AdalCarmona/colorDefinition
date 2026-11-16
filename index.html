@@ -13,55 +13,68 @@
         <h1>Sistema de Colores</h1>
     </header>
     <main>
-        <form id="solicitud-datos">
-            <label id="color-nombre" for="color-entrada">Seleccion de Color:</label>
-            <input type="text" id="color-entrada" placeholder="Numero o nombre del color" required>
+        <div id="contenedor">
+            <form id="solicitud-datos">
+                <label id="color-nombre" for="color-entrada">Seleccion de Color:</label>
+                <input type="text" id="color-entrada" placeholder="Numero o nombre del color" required>
 
-            <fieldset>
-                <legend>Selecciona presentacion:</legend>
-                <label><input type="radio" name="presentacion" value="cubeta">Cubeta</label>
-                <label><input type="radio" name="presentacion" value="galon">Galon</label>
-                <label><input type="radio" name="presentacion" value="litro">Litro</label>
-            </fieldset>
+                <fieldset>
+                    <legend>Selecciona presentacion:</legend>
+                    <label><input type="radio" name="presentacion" value="cubeta">Cubeta</label>
+                    <label><input type="radio" name="presentacion" value="galon">Galon</label>
+                    <label><input type="radio" name="presentacion" value="litro">Litro</label>
+                </fieldset>
 
-            <button type="submit" id="buscar">Buscar</button>
-        </form>
+                <button type="submit" id="buscar">Buscar</button>
+            </form>
 
-        <section id="resultado">
-            <h2>Combinación de Tintas:</h2>
+            <section id="resultado">
+                <h2>Combinación de Tintas:</h2>
 
-            <div id="color-info">
-                <div class="info-line">
-                    <span class="info-label">Color:</span>
-                    <span id="color-name"></span>
+                <div id="color-info">
+                    <div class="info-line">
+                        <span class="info-label">Color:</span>
+                        <span id="color-name"></span>
 
-                    <span class="info-label">Código:</span>
-                    <span id="color-code"></span>
+                        <span class="info-label">Código:</span>
+                        <span id="color-code"></span>
+                    </div>
+
+                    <div class="info-line">
+                        <span class="info-label">Base:</span>
+                        <span id="color-base"></span>
+
+                        <span class="info-label">Presentación:</span>
+                        <span id="color-presentation"></span>
+                    </div>
                 </div>
 
-                <div class="info-line">
-                    <span class="info-label">Base:</span>
-                    <span id="color-base"></span>
+                <table class="tabla-datos">
+                    <thead>
+                        <tr>
+                            <th>Tinta</th>
+                            <th>oz</th>
+                            <th>64</th>
+                            <th>128</th>
+                        </tr>
+                    </thead>
 
-                    <span class="info-label">Presentación:</span>
-                    <span id="color-presentation"></span>
-                </div>
-            </div>
+                    <tbody id="tabla-tintas"></tbody>
+                </table>
+                <div id="color-info-error"></div>
+            </section>
+        </div>    
 
-            <table class="tabla-datos">
-                <thead>
-                    <tr>
-                        <th>Tinta</th>
-                        <th>oz</th>
-                        <th>64</th>
-                        <th>128</th>
-                    </tr>
-                </thead>
-
-                <tbody id="tabla-tintas"></tbody>
-            </table>
-            <div id="color-info-error"></div>
+        <section id="referencia"> 
+            <h2>Referencia de algunos colores</h2>
+            <figure>
+                <img src="./src/img/colors30.png" alt="Referencia de codigos y nombres de colores disponibles">
+                <figcaption>
+                    Selecciona alguno de los numeros y/o nombres de colores disponibles.
+                </figcaption>
+            </figure>
         </section>
+    
     </main>
     <script src="./src/js/app.js"></script>
 

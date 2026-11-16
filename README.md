@@ -67,4 +67,8 @@ El catálogo incluido en [`src/data/formulas.json`](./src/data/formulas.json) co
 | 2720D | Acorn | 2401P | Ashley | 2453D | Willow Springs |
 | 2723P | Adagio | 2007C | Asparagus | 2436P | Arbella |
 
+## Captura de pantalla - Ejemplo de slección:
+
+![Pantalla principal](./src/img/screenShot.png)
+
 
